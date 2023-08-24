@@ -93,7 +93,7 @@ check_path(out)
 if mirror:
     mirror_folder(dirpath)
 file_list = [f for f in os.listdir(dirpath) if f.endswith('.js')]
-#compile_files(file_list,dirpath,os.path.join(out, get_suffix(dirpath)))
+compile_files(file_list,dirpath,os.path.join(out, get_suffix(dirpath)))
 
 while len(subfolders) != 0:
     for s in subfolders:
